@@ -1,0 +1,4 @@
+source;share/minimal_gz_demo/local_setup.bash
+source;share/minimal_gz_demo/local_setup.dsv
+source;share/minimal_gz_demo/local_setup.sh
+source;share/minimal_gz_demo/local_setup.zsh

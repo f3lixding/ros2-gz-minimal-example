@@ -1,0 +1,1343 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "controller"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"target_link_libraries",
+			"ament_target_dependencies",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/geometry_msgs/cmake/geometry_msgs__rosidl_typesupport_introspection_cExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/geometry_msgs/cmake/ament_cmake_export_targets-extras.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/geometry_msgs/cmake/geometry_msgsConfig.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/geometry_msgs/cmake/export_geometry_msgs__rosidl_typesupport_fastrtps_cExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/geometry_msgs/cmake/geometry_msgs__rosidl_typesupport_introspection_cppExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/geometry_msgs/cmake/export_geometry_msgs__rosidl_typesupport_fastrtps_cppExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/geometry_msgs/cmake/geometry_msgs__rosidl_typesupport_cppExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/geometry_msgs/cmake/geometry_msgs__rosidl_typesupport_cExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/geometry_msgs/cmake/export_geometry_msgs__rosidl_generator_cExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rclcpp/cmake/rclcppExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rclcpp/cmake/ament_cmake_export_targets-extras.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rclcpp/cmake/rclcppConfig.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rcl/cmake/rclExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rcl/cmake/ament_cmake_export_targets-extras.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rcl/cmake/rclConfig.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/nav_msgs/cmake/export_nav_msgs__rosidl_typesupport_fastrtps_cExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/nav_msgs/cmake/ament_cmake_export_targets-extras.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/nav_msgs/cmake/nav_msgsConfig.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/nav_msgs/cmake/export_nav_msgs__rosidl_typesupport_fastrtps_cppExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_introspection_cExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_introspection_cppExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_cppExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_cExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/nav_msgs/cmake/export_nav_msgs__rosidl_generator_cExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rosidl_typesupport_cpp/cmake/rosidl_typesupport_cppExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rosidl_typesupport_cpp/cmake/ament_cmake_export_targets-extras.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rosidl_typesupport_cpp/cmake/rosidl_typesupport_cppConfig.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/std_msgs/cmake/std_msgsConfig.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/tracetools/cmake/tracetools_exportExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/tracetools/cmake/ament_cmake_export_targets-extras.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/tracetools/cmake/tracetoolsConfig.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rcutils/cmake/rcutilsExport.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rcutils/cmake/ament_cmake_export_targets-extras.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rcutils/cmake/rcutilsConfig.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 146,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"file" : 4,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 41,
+				"parent" : 6
+			},
+			{
+				"file" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 9,
+				"parent" : 8
+			},
+			{
+				"file" : 2,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 61,
+				"parent" : 10
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 9,
+				"parent" : 8
+			},
+			{
+				"file" : 5,
+				"parent" : 12
+			},
+			{
+				"command" : 4,
+				"file" : 5,
+				"line" : 61,
+				"parent" : 13
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 9,
+				"parent" : 8
+			},
+			{
+				"file" : 6,
+				"parent" : 15
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 61,
+				"parent" : 16
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 9,
+				"parent" : 8
+			},
+			{
+				"file" : 7,
+				"parent" : 18
+			},
+			{
+				"command" : 4,
+				"file" : 7,
+				"line" : 61,
+				"parent" : 19
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 9,
+				"parent" : 8
+			},
+			{
+				"file" : 8,
+				"parent" : 21
+			},
+			{
+				"command" : 4,
+				"file" : 8,
+				"line" : 61,
+				"parent" : 22
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 9,
+				"parent" : 8
+			},
+			{
+				"file" : 9,
+				"parent" : 24
+			},
+			{
+				"command" : 4,
+				"file" : 9,
+				"line" : 61,
+				"parent" : 25
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 9,
+				"parent" : 8
+			},
+			{
+				"file" : 10,
+				"parent" : 27
+			},
+			{
+				"command" : 4,
+				"file" : 10,
+				"line" : 61,
+				"parent" : 28
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"file" : 13,
+				"parent" : 30
+			},
+			{
+				"command" : 5,
+				"file" : 13,
+				"line" : 41,
+				"parent" : 31
+			},
+			{
+				"file" : 12,
+				"parent" : 32
+			},
+			{
+				"command" : 5,
+				"file" : 12,
+				"line" : 9,
+				"parent" : 33
+			},
+			{
+				"file" : 11,
+				"parent" : 34
+			},
+			{
+				"command" : 4,
+				"file" : 11,
+				"line" : 61,
+				"parent" : 35
+			},
+			{
+				"command" : 5,
+				"file" : 13,
+				"line" : 41,
+				"parent" : 31
+			},
+			{
+				"file" : 19,
+				"parent" : 37
+			},
+			{
+				"command" : 6,
+				"file" : 19,
+				"line" : 21,
+				"parent" : 38
+			},
+			{
+				"file" : 18,
+				"parent" : 39
+			},
+			{
+				"command" : 5,
+				"file" : 18,
+				"line" : 41,
+				"parent" : 40
+			},
+			{
+				"file" : 17,
+				"parent" : 41
+			},
+			{
+				"command" : 6,
+				"file" : 17,
+				"line" : 21,
+				"parent" : 42
+			},
+			{
+				"file" : 16,
+				"parent" : 43
+			},
+			{
+				"command" : 5,
+				"file" : 16,
+				"line" : 41,
+				"parent" : 44
+			},
+			{
+				"file" : 15,
+				"parent" : 45
+			},
+			{
+				"command" : 5,
+				"file" : 15,
+				"line" : 9,
+				"parent" : 46
+			},
+			{
+				"file" : 14,
+				"parent" : 47
+			},
+			{
+				"command" : 4,
+				"file" : 14,
+				"line" : 61,
+				"parent" : 48
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"file" : 22,
+				"parent" : 50
+			},
+			{
+				"command" : 5,
+				"file" : 22,
+				"line" : 41,
+				"parent" : 51
+			},
+			{
+				"file" : 21,
+				"parent" : 52
+			},
+			{
+				"command" : 5,
+				"file" : 21,
+				"line" : 9,
+				"parent" : 53
+			},
+			{
+				"file" : 20,
+				"parent" : 54
+			},
+			{
+				"command" : 4,
+				"file" : 20,
+				"line" : 61,
+				"parent" : 55
+			},
+			{
+				"command" : 5,
+				"file" : 21,
+				"line" : 9,
+				"parent" : 53
+			},
+			{
+				"file" : 23,
+				"parent" : 57
+			},
+			{
+				"command" : 4,
+				"file" : 23,
+				"line" : 61,
+				"parent" : 58
+			},
+			{
+				"command" : 5,
+				"file" : 21,
+				"line" : 9,
+				"parent" : 53
+			},
+			{
+				"file" : 24,
+				"parent" : 60
+			},
+			{
+				"command" : 4,
+				"file" : 24,
+				"line" : 61,
+				"parent" : 61
+			},
+			{
+				"command" : 5,
+				"file" : 21,
+				"line" : 9,
+				"parent" : 53
+			},
+			{
+				"file" : 25,
+				"parent" : 63
+			},
+			{
+				"command" : 4,
+				"file" : 25,
+				"line" : 61,
+				"parent" : 64
+			},
+			{
+				"command" : 5,
+				"file" : 21,
+				"line" : 9,
+				"parent" : 53
+			},
+			{
+				"file" : 26,
+				"parent" : 66
+			},
+			{
+				"command" : 4,
+				"file" : 26,
+				"line" : 61,
+				"parent" : 67
+			},
+			{
+				"command" : 5,
+				"file" : 21,
+				"line" : 9,
+				"parent" : 53
+			},
+			{
+				"file" : 27,
+				"parent" : 69
+			},
+			{
+				"command" : 4,
+				"file" : 27,
+				"line" : 61,
+				"parent" : 70
+			},
+			{
+				"command" : 5,
+				"file" : 21,
+				"line" : 9,
+				"parent" : 53
+			},
+			{
+				"file" : 28,
+				"parent" : 72
+			},
+			{
+				"command" : 4,
+				"file" : 28,
+				"line" : 61,
+				"parent" : 73
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 41,
+				"parent" : 6
+			},
+			{
+				"file" : 36,
+				"parent" : 75
+			},
+			{
+				"command" : 6,
+				"file" : 36,
+				"line" : 21,
+				"parent" : 76
+			},
+			{
+				"file" : 35,
+				"parent" : 77
+			},
+			{
+				"command" : 5,
+				"file" : 35,
+				"line" : 41,
+				"parent" : 78
+			},
+			{
+				"file" : 34,
+				"parent" : 79
+			},
+			{
+				"command" : 6,
+				"file" : 34,
+				"line" : 21,
+				"parent" : 80
+			},
+			{
+				"file" : 33,
+				"parent" : 81
+			},
+			{
+				"command" : 5,
+				"file" : 33,
+				"line" : 41,
+				"parent" : 82
+			},
+			{
+				"file" : 32,
+				"parent" : 83
+			},
+			{
+				"command" : 6,
+				"file" : 32,
+				"line" : 21,
+				"parent" : 84
+			},
+			{
+				"file" : 31,
+				"parent" : 85
+			},
+			{
+				"command" : 5,
+				"file" : 31,
+				"line" : 41,
+				"parent" : 86
+			},
+			{
+				"file" : 30,
+				"parent" : 87
+			},
+			{
+				"command" : 5,
+				"file" : 30,
+				"line" : 9,
+				"parent" : 88
+			},
+			{
+				"file" : 29,
+				"parent" : 89
+			},
+			{
+				"command" : 4,
+				"file" : 29,
+				"line" : 61,
+				"parent" : 90
+			},
+			{
+				"command" : 6,
+				"file" : 19,
+				"line" : 21,
+				"parent" : 38
+			},
+			{
+				"file" : 39,
+				"parent" : 92
+			},
+			{
+				"command" : 5,
+				"file" : 39,
+				"line" : 41,
+				"parent" : 93
+			},
+			{
+				"file" : 38,
+				"parent" : 94
+			},
+			{
+				"command" : 5,
+				"file" : 38,
+				"line" : 9,
+				"parent" : 95
+			},
+			{
+				"file" : 37,
+				"parent" : 96
+			},
+			{
+				"command" : 4,
+				"file" : 37,
+				"line" : 61,
+				"parent" : 97
+			},
+			{
+				"command" : 6,
+				"file" : 32,
+				"line" : 21,
+				"parent" : 84
+			},
+			{
+				"file" : 44,
+				"parent" : 99
+			},
+			{
+				"command" : 5,
+				"file" : 44,
+				"line" : 41,
+				"parent" : 100
+			},
+			{
+				"file" : 43,
+				"parent" : 101
+			},
+			{
+				"command" : 6,
+				"file" : 43,
+				"line" : 21,
+				"parent" : 102
+			},
+			{
+				"file" : 42,
+				"parent" : 103
+			},
+			{
+				"command" : 5,
+				"file" : 42,
+				"line" : 41,
+				"parent" : 104
+			},
+			{
+				"file" : 41,
+				"parent" : 105
+			},
+			{
+				"command" : 5,
+				"file" : 41,
+				"line" : 9,
+				"parent" : 106
+			},
+			{
+				"file" : 40,
+				"parent" : 107
+			},
+			{
+				"command" : 4,
+				"file" : 40,
+				"line" : 61,
+				"parent" : 108
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 142,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "DEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "FASTCDR_DYN_LINK"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 110,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/geometry_msgs"
+				},
+				{
+					"backtrace" : 110,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/nav_msgs"
+				},
+				{
+					"backtrace" : 110,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rclcpp"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/std_msgs"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/builtin_interfaces"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rosidl_runtime_c"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rcutils"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rosidl_typesupport_interface"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rosidl_typesupport_introspection_c"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rosidl_runtime_cpp"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rosidl_typesupport_fastrtps_cpp"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rmw"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rosidl_dynamic_typesupport"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rosidl_typesupport_fastrtps_c"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rosidl_typesupport_introspection_cpp"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/service_msgs"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/libstatistics_collector"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rcl"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rcl_interfaces"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rcl_logging_interface"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rcl_yaml_param_parser"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/type_description_interfaces"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rcpputils"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/statistics_msgs"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rosgraph_msgs"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rosidl_typesupport_cpp"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/rosidl_typesupport_c"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/include/tracetools"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "controller::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib/minimal_gz_demo"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/home/felix/doodle/minimal_gz_ros2/install/minimal_gz_demo"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librclcpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstd_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstd_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstd_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstd_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/liblibstatistics_collector.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcl.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librmw_implementation.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libtype_description_interfaces__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libtype_description_interfaces__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libtype_description_interfaces__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libtype_description_interfaces__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libtype_description_interfaces__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libtype_description_interfaces__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcl_interfaces__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcl_interfaces__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 56,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 59,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 62,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libservice_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 65,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 68,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libservice_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcl_interfaces__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcl_interfaces__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 71,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libservice_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 74,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libservice_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcl_yaml_param_parser.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosgraph_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosgraph_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosgraph_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosgraph_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstatistics_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstatistics_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libfastcdr.so.2.2.7",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librmw.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosidl_dynamic_typesupport.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libbuiltin_interfaces__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstatistics_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libbuiltin_interfaces__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstatistics_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libbuiltin_interfaces__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 91,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librosidl_runtime_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcpputils.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libtracetools.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 98,
+				"fragment" : "-llttng-ust",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 98,
+				"fragment" : "-llttng-ust-common",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 98,
+				"fragment" : "-rdynamic",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 98,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcl_logging_interface.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcutils.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 109,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 109,
+				"fragment" : "-latomic",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "controller",
+	"nameOnDisk" : "controller",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/controller.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
