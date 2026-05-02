@@ -8,6 +8,7 @@
     nix-ros-overlay.url = "github:lopsided98/nix-ros-overlay/master";
     nix-ros-overlay.inputs.nixpkgs.follows = "ros-nixpkgs";
     nix-ros-gz.url = "github:f3lixding/nix-ros-gz";
+    zig-overlay.url = "github:mitchellh/zig-overlay";
   };
 
   outputs =
@@ -17,6 +18,7 @@
       flake-utils,
       nix-ros-overlay,
       nix-ros-gz,
+      zig-overlay,
       ...
     }:
     flake-utils.lib.eachDefaultSystem (
@@ -41,6 +43,7 @@
             ros.python-cmake-module
             ros.rclcpp
             ros.ros2launch
+            ros.teleop-twist-keyboard
           ];
         };
 

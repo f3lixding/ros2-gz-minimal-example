@@ -9,36 +9,37 @@
 
 using namespace std::chrono_literals;
 
-class DemoController : public rclcpp::Node
-{
+// TODO:
+// 1. Add a zig pkg into the repo (this meant adding to flake and cmake)
+// 2. Build the zig pkg as a library
+// 3. Include this library from the cmakelist
+// 4. Reference it here
+
+class DemoController : public rclcpp::Node {
 public:
   DemoController()
-  : rclcpp::Node("demo_controller"),
-    last_log_time_(0, 0, RCL_ROS_TIME)
-  {
+      : rclcpp::Node("demo_controller"), last_log_time_(0, 0, RCL_ROS_TIME) {
     cmd_pub_ = this->create_publisher<geometry_msgs::msg::Twist>(
-      "/model/minibot/cmd_vel", 10);
+        "/model/minibot/cmd_vel", 10);
     odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
-      "/model/minibot/odometry",
-      10,
-      std::bind(&DemoController::handle_odom, this, std::placeholders::_1));
+        "/model/minibot/odometry", 10,
+        [this](nav_msgs::msg::Odometry::SharedPtr msg) {
+          this->handle_odom(msg);
+        });
 
-    timer_ = this->create_wall_timer(100ms, std::bind(&DemoController::tick, this));
+    timer_ = this->create_wall_timer(100ms, [this]() { this->tick(); });
 
-    RCLCPP_INFO(
-      get_logger(),
-      "Publishing Twist to /model/minibot/cmd_vel and listening on /model/minibot/odometry");
+    RCLCPP_INFO(get_logger(), "Publishing Twist to /model/minibot/cmd_vel and "
+                              "listening on /model/minibot/odometry");
   }
 
 private:
-  void handle_odom(const nav_msgs::msg::Odometry::SharedPtr msg)
-  {
+  void handle_odom(const nav_msgs::msg::Odometry::SharedPtr msg) {
     last_odom_ = *msg;
     have_odom_ = true;
   }
 
-  void tick()
-  {
+  void tick() {
     const auto now = this->now();
     if (now.nanoseconds() == 0) {
       return;
@@ -63,16 +64,11 @@ private:
     cmd_pub_->publish(cmd);
 
     if (have_odom_ && (now - last_log_time_).seconds() >= 1.0) {
-      const auto & pose = last_odom_.pose.pose.position;
-      const auto & twist = last_odom_.twist.twist;
-      RCLCPP_INFO(
-        get_logger(),
-        "sim_t=%.1fs pose=(%.2f, %.2f) v=(%.2f m/s, %.2f rad/s)",
-        elapsed,
-        pose.x,
-        pose.y,
-        twist.linear.x,
-        twist.angular.z);
+      const auto &pose = last_odom_.pose.pose.position;
+      const auto &twist = last_odom_.twist.twist;
+      RCLCPP_INFO(get_logger(),
+                  "sim_t=%.1fs pose=(%.2f, %.2f) v=(%.2f m/s, %.2f rad/s)",
+                  elapsed, pose.x, pose.y, twist.linear.x, twist.angular.z);
       last_log_time_ = now;
     }
   }
@@ -87,8 +83,7 @@ private:
   bool have_odom_{false};
 };
 
-int main(int argc, char ** argv)
-{
+int main(int argc, char **argv) {
   rclcpp::init(argc, argv);
   rclcpp::spin(std::make_shared<DemoController>());
   rclcpp::shutdown();
