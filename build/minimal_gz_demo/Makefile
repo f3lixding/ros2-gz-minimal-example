@@ -198,6 +198,19 @@ minimal_gz_demo_uninstall/fast:
 .PHONY : minimal_gz_demo_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named testlib_zig
+
+# Build rule for target.
+testlib_zig: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testlib_zig
+.PHONY : testlib_zig
+
+# fast build rule for target.
+testlib_zig/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testlib_zig.dir/build.make CMakeFiles/testlib_zig.dir/build
+.PHONY : testlib_zig/fast
+
+#=============================================================================
 # Target rules for targets named controller
 
 # Build rule for target.
@@ -248,6 +261,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... minimal_gz_demo_uninstall"
+	@echo "... testlib_zig"
 	@echo "... uninstall"
 	@echo "... controller"
 	@echo "... src/controller.o"

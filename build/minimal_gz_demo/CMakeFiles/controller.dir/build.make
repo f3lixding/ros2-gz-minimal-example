@@ -103,6 +103,7 @@ controller: /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs_
 controller: /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs__rosidl_typesupport_cpp.so
 controller: /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs__rosidl_generator_py.so
 controller: /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librclcpp.so
+controller: /home/felix/doodle/minimal_gz_ros2/ros_ws/src/minimal_gz_demo/../../../pkgs/testlib/zig-out/lib/libtestlib.so
 controller: /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 controller: /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 controller: /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so

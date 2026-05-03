@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-c641f8cb250cea019470.json",
+					"jsonFile" : "directory-.-543502b0b96d255e93ec.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15"
@@ -18,7 +18,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -35,7 +36,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -44,7 +46,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "controller::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-controller-4a44cee952edcb91c06f.json",
+					"jsonFile" : "target-controller-e11502733b354a52d09b.json",
 					"name" : "controller",
 					"projectIndex" : 0
 				},
@@ -53,6 +55,13 @@
 					"id" : "minimal_gz_demo_uninstall::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-minimal_gz_demo_uninstall-5eb430340f83d518c788.json",
 					"name" : "minimal_gz_demo_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "testlib_zig::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-testlib_zig-949d88ee3049037e91bc.json",
+					"name" : "testlib_zig",
 					"projectIndex" : 0
 				},
 				{

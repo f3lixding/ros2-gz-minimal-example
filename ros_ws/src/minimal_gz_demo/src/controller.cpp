@@ -6,6 +6,7 @@
 #include "geometry_msgs/msg/twist.hpp"
 #include "nav_msgs/msg/odometry.hpp"
 #include "rclcpp/rclcpp.hpp"
+#include "testlib.h"
 
 using namespace std::chrono_literals;
 
@@ -62,6 +63,8 @@ private:
     }
 
     cmd_pub_->publish(cmd);
+
+    printToStdout("oh fuck it works");
 
     if (have_odom_ && (now - last_log_time_).seconds() >= 1.0) {
       const auto &pose = last_odom_.pose.pose.position;

@@ -10,6 +10,7 @@ controller: \
   /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs__rosidl_typesupport_cpp.so \
   /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs__rosidl_generator_py.so \
   /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librclcpp.so \
+  /home/felix/doodle/minimal_gz_ros2/ros_ws/src/minimal_gz_demo/../../../pkgs/testlib/zig-out/lib/libtestlib.so \
   /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so \
   /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so \
   /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so \
@@ -123,12 +124,12 @@ controller: \
   /nix/store/sanx9fg8mry8mq92zhlm5qvb83qlxrlx-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/libgcc.a \
   /nix/store/sanx9fg8mry8mq92zhlm5qvb83qlxrlx-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o \
   /nix/store/fjkx1l5cnskzrqacf08z7i8z17256w0j-glibc-2.42-61/lib/crtn.o \
-  /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstd_msgs__rosidl_generator_py.so \
-  /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libservice_msgs__rosidl_generator_py.so \
-  /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libpython3.12.so.1.0 \
-  /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libament_index_cpp.so \
+  /nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/libstd_msgs__rosidl_generator_py.so \
+  /nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/libservice_msgs__rosidl_generator_py.so \
+  /nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/libpython3.12.so.1.0 \
+  /nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/libament_index_cpp.so \
   /nix/store/fjkx1l5cnskzrqacf08z7i8z17256w0j-glibc-2.42-61/lib/ld-linux-x86-64.so.2 \
-  /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcl_logging_spdlog.so \
+  /nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/librcl_logging_spdlog.so \
   /nix/store/a28v2wclwmaymykakvbzfgzsxrqp4jij-libyaml-0.2.5/lib/libyaml-0.so.2 \
   /nix/store/72clf8wm74i490x8wf1jbc8bwcqapnn3-numactl-2.0.18/lib/libnuma.so.1 \
   /nix/store/l6rc5cy3mng2ph2dcf97z85l490sid0p-lttng-ust-2.13.8/lib/liblttng-ust-tracepoint.so.1 \
@@ -158,6 +159,8 @@ CMakeFiles/controller.dir/src/controller.cpp.o:
 /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libnav_msgs__rosidl_generator_py.so:
 
 /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librclcpp.so:
+
+/home/felix/doodle/minimal_gz_ros2/ros_ws/src/minimal_gz_demo/../../../pkgs/testlib/zig-out/lib/libtestlib.so:
 
 /nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so:
 
@@ -385,17 +388,17 @@ CMakeFiles/controller.dir/src/controller.cpp.o:
 
 /nix/store/fjkx1l5cnskzrqacf08z7i8z17256w0j-glibc-2.42-61/lib/crtn.o:
 
-/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libstd_msgs__rosidl_generator_py.so:
+/nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/libstd_msgs__rosidl_generator_py.so:
 
-/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libservice_msgs__rosidl_generator_py.so:
+/nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/libservice_msgs__rosidl_generator_py.so:
 
-/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libpython3.12.so.1.0:
+/nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/libpython3.12.so.1.0:
 
-/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/libament_index_cpp.so:
+/nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/libament_index_cpp.so:
 
 /nix/store/fjkx1l5cnskzrqacf08z7i8z17256w0j-glibc-2.42-61/lib/ld-linux-x86-64.so.2:
 
-/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/lib/librcl_logging_spdlog.so:
+/nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/librcl_logging_spdlog.so:
 
 /nix/store/a28v2wclwmaymykakvbzfgzsxrqp4jij-libyaml-0.2.5/lib/libyaml-0.so.2:
 

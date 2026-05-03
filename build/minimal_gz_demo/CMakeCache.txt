@@ -274,6 +274,9 @@ SITE:STRING=nixos
 //The directory containing a CMake configuration file for TinyXML2.
 TinyXML2_DIR:PATH=/nix/store/xr8ylsrsglb9cy7c3l792bhvysrnd03a-tinyxml2-11.0.0/lib/cmake/tinyxml2
 
+//Path to a program.
+ZIG_EXECUTABLE:FILEPATH=/nix/store/9zyky24fffkbhnkmjcnrjcl3dmvx6w9x-zig-0.16.0/bin/zig
+
 //Path to a library.
 _lib:FILEPATH=/nix/store/fjkx1l5cnskzrqacf08z7i8z17256w0j-glibc-2.42-61/lib/libdl.so
 

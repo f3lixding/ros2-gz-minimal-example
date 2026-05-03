@@ -35,7 +35,7 @@
           inherit system;
         };
 
-        zig = pkgs.zigPackages."0.16.0";
+        zig = pkgs.zigpkgs."0.16.0";
 
         # not making a patch for this because the latest version at the time
         # writing is already 0.16

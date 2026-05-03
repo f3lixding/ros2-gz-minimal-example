@@ -1,5 +1,6 @@
 /home/felix/doodle/minimal_gz_ros2/build/minimal_gz_demo/CMakeFiles/uninstall.dir
 /home/felix/doodle/minimal_gz_ros2/build/minimal_gz_demo/CMakeFiles/minimal_gz_demo_uninstall.dir
+/home/felix/doodle/minimal_gz_ros2/build/minimal_gz_demo/CMakeFiles/testlib_zig.dir
 /home/felix/doodle/minimal_gz_ros2/build/minimal_gz_demo/CMakeFiles/controller.dir
 /home/felix/doodle/minimal_gz_ros2/build/minimal_gz_demo/CMakeFiles/test.dir
 /home/felix/doodle/minimal_gz_ros2/build/minimal_gz_demo/CMakeFiles/edit_cache.dir
