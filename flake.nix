@@ -26,11 +26,20 @@
       let
         pkgs = import nixpkgs {
           inherit system;
+          overlays = [
+            zig-overlay.overlays.default
+          ];
         };
 
         simPkgs = import ros-nixpkgs {
           inherit system;
         };
+
+        zig = pkgs.zigPackages."0.16.0";
+
+        # not making a patch for this because the latest version at the time
+        # writing is already 0.16
+        zls = pkgs.zls;
 
         sim = nix-ros-gz.lib.sim {
           pkgs = simPkgs;
@@ -64,6 +73,8 @@
             pkgs.cmake
             pkgs.gcc
             pkgs.pkg-config
+            zig
+            zls
           ];
 
           shellHook = ''
