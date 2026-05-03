@@ -24,6 +24,7 @@ def generate_launch_description():
             "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
             "/model/minibot/cmd_vel@geometry_msgs/msg/Twist]gz.msgs.Twist",
             "/model/minibot/odometry@nav_msgs/msg/Odometry[gz.msgs.Odometry",
+            "/model/minibot/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan",
         ],
         output="screen",
     )

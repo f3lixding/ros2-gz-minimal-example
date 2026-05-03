@@ -278,7 +278,7 @@ TinyXML2_DIR:PATH=/nix/store/xr8ylsrsglb9cy7c3l792bhvysrnd03a-tinyxml2-11.0.0/li
 ZIG_EXECUTABLE:FILEPATH=/nix/store/9zyky24fffkbhnkmjcnrjcl3dmvx6w9x-zig-0.16.0/bin/zig
 
 //Path to a library.
-_lib:FILEPATH=/nix/store/fjkx1l5cnskzrqacf08z7i8z17256w0j-glibc-2.42-61/lib/libdl.so
+_lib:FILEPATH=/nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/ament_cmake/cmake
@@ -456,6 +456,9 @@ rosidl_typesupport_introspection_c_DIR:PATH=/nix/store/kw0yj3fjnqrchb7j65zcdgkdw
 
 //The directory containing a CMake configuration file for rosidl_typesupport_introspection_cpp.
 rosidl_typesupport_introspection_cpp_DIR:PATH=/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/rosidl_typesupport_introspection_cpp/cmake
+
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/share/sensor_msgs/cmake
 
 //The directory containing a CMake configuration file for service_msgs.
 service_msgs_DIR:PATH=/nix/store/kw0yj3fjnqrchb7j65zcdgkdwh53y7fz-ros-env/share/service_msgs/cmake

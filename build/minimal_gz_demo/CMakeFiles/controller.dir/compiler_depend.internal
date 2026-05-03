@@ -4,6 +4,12 @@
 CMakeFiles/controller.dir/src/controller.cpp.o
  /home/felix/doodle/minimal_gz_ros2/ros_ws/src/minimal_gz_demo/src/controller.cpp
  /home/felix/doodle/minimal_gz_ros2/pkgs/testlib/zig-out/include/testlib.h
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__builder.hpp
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__struct.hpp
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__traits.hpp
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__type_support.hpp
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/include/sensor_msgs/sensor_msgs/msg/laser_scan.hpp
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /nix/store/fbbw928argckfii0j322346ihmllg7a7-glibc-2.42-61-dev/include/alloca.h
  /nix/store/fbbw928argckfii0j322346ihmllg7a7-glibc-2.42-61-dev/include/asm-generic/bitsperlong.h
  /nix/store/fbbw928argckfii0j322346ihmllg7a7-glibc-2.42-61-dev/include/asm-generic/errno-base.h
@@ -818,6 +824,19 @@ controller
  /home/felix/doodle/minimal_gz_ros2/pkgs/testlib/zig-out/lib/libtestlib.so
  /nix/store/53xizxayw4y047x5rhahjkc5k3fvmyv0-spdlog-1.15.1/lib/libspdlog.so.1.15
  /nix/store/72clf8wm74i490x8wf1jbc8bwcqapnn3-numactl-2.0.18/lib/libnuma.so.1
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/libament_index_cpp.so
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/libpython3.12.so.1.0
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/librcl_logging_spdlog.so
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/libsensor_msgs__rosidl_generator_c.so
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/libsensor_msgs__rosidl_generator_py.so
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/libsensor_msgs__rosidl_typesupport_c.so
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/libservice_msgs__rosidl_generator_py.so
+ /nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib/libstd_msgs__rosidl_generator_py.so
  /nix/store/a28v2wclwmaymykakvbzfgzsxrqp4jij-libyaml-0.2.5/lib/libyaml-0.so.2
  /nix/store/fjkx1l5cnskzrqacf08z7i8z17256w0j-glibc-2.42-61/lib/Scrt1.o
  /nix/store/fjkx1l5cnskzrqacf08z7i8z17256w0j-glibc-2.42-61/lib/crti.o
@@ -924,11 +943,6 @@ controller
  /nix/store/l6rc5cy3mng2ph2dcf97z85l490sid0p-lttng-ust-2.13.8/lib/liblttng-ust-common.so
  /nix/store/l6rc5cy3mng2ph2dcf97z85l490sid0p-lttng-ust-2.13.8/lib/liblttng-ust-tracepoint.so.1
  /nix/store/l6rc5cy3mng2ph2dcf97z85l490sid0p-lttng-ust-2.13.8/lib/liblttng-ust.so
- /nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/libament_index_cpp.so
- /nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/libpython3.12.so.1.0
- /nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/librcl_logging_spdlog.so
- /nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/libservice_msgs__rosidl_generator_py.so
- /nix/store/pnfsks3sdvpf5shx30rk76hlbxbdvrq0-ros-env/lib/libstd_msgs__rosidl_generator_py.so
  /nix/store/sanx9fg8mry8mq92zhlm5qvb83qlxrlx-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o
  /nix/store/sanx9fg8mry8mq92zhlm5qvb83qlxrlx-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtendS.o
  /nix/store/sanx9fg8mry8mq92zhlm5qvb83qlxrlx-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/libgcc.a

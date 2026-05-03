@@ -6,6 +6,8 @@
 #include "geometry_msgs/msg/twist.hpp"
 #include "nav_msgs/msg/odometry.hpp"
 #include "rclcpp/rclcpp.hpp"
+#include "sensor_msgs/msg/laser_scan.hpp"
+
 #include "testlib.h"
 
 using namespace std::chrono_literals;
@@ -28,6 +30,13 @@ public:
           this->handle_odom(msg);
         });
 
+    // lidar
+    lidar_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
+        "/model/minibot/scan", 10,
+        [this](sensor_msgs::msg::LaserScan::SharedPtr msg) {
+          this->handle_laser(msg);
+        });
+
     timer_ = this->create_wall_timer(100ms, [this]() { this->tick(); });
 
     RCLCPP_INFO(get_logger(), "Publishing Twist to /model/minibot/cmd_vel and "
@@ -38,6 +47,10 @@ private:
   void handle_odom(const nav_msgs::msg::Odometry::SharedPtr msg) {
     last_odom_ = *msg;
     have_odom_ = true;
+  }
+
+  void handle_laser(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
+    printToStdout("received laser msg");
   }
 
   void tick() {
@@ -64,8 +77,6 @@ private:
 
     cmd_pub_->publish(cmd);
 
-    printToStdout("oh fuck it works");
-
     if (have_odom_ && (now - last_log_time_).seconds() >= 1.0) {
       const auto &pose = last_odom_.pose.pose.position;
       const auto &twist = last_odom_.twist.twist;
@@ -78,6 +89,7 @@ private:
 
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_pub_;
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+  rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr lidar_sub_;
   rclcpp::TimerBase::SharedPtr timer_;
 
   std::optional<rclcpp::Time> start_time_;

@@ -53,6 +53,7 @@
             ros.rclcpp
             ros.ros2launch
             ros.teleop-twist-keyboard
+            ros.sensor-msgs
           ];
         };
 

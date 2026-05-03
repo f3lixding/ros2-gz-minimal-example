@@ -54,7 +54,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/minimal_gz_demo/controller")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/minimal_gz_demo/controller"
-         OLD_RPATH "/home/felix/doodle/minimal_gz_ros2/ros_ws/src/minimal_gz_demo/../../../pkgs/testlib/zig-out/lib:"
+         OLD_RPATH "/nix/store/8fayrvw2r295vvnzh6skv45wgy86q01i-ros-env/lib:/home/felix/doodle/minimal_gz_ros2/ros_ws/src/minimal_gz_demo/../../../pkgs/testlib/zig-out/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/nix/store/qd70v8g0561vm8m33kmnp79z00cgyi5n-gcc-wrapper-15.2.0/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/minimal_gz_demo/controller")
