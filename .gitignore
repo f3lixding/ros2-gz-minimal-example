@@ -6,3 +6,4 @@ log
 **/zig-out
 **/.zig-cache
 build/
+.cache/

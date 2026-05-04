@@ -51,6 +51,12 @@ private:
 
   void handle_laser(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
     printToStdout("received laser msg");
+    RCLCPP_INFO(get_logger(),
+                "scan frame=%s ranges=%zu angle_min=%.2f angle_max=%.2f "
+                "inc=%.4f range_min=%.2f range_max=%.2f",
+                msg->header.frame_id.c_str(), msg->ranges.size(),
+                msg->angle_min, msg->angle_max, msg->angle_increment,
+                msg->range_min, msg->range_max);
   }
 
   void tick() {
