@@ -1,6 +1,7 @@
 //! By convention, root.zig is the root source file when making a package.
 const std = @import("std");
 const io = std.Io.Threaded.global_single_threaded.io();
+const allocator = std.heap.c_allocator;
 
 pub const LaserScanFFISafe = extern struct {
     /// Start angle of the scan, in radians.
@@ -36,18 +37,49 @@ pub const LaserScanFFISafe = extern struct {
     ranges_len: usize,
 };
 
-export fn printToStdout(input: [*:0]const u8) callconv(.c) void {
-    var buf: [1028]u8 = undefined;
+pub const LaserRadarHandler = struct {
+    const Self = @This();
+    const Allocator = std.mem.Allocator;
+
+    allocator: Allocator,
+
+    pub fn init() !Self {
+        return .{
+            .allocator = allocator,
+        };
+    }
+
+    pub fn deinit(self: Self) void {
+        _ = self;
+    }
+};
+
+fn printToStdout(comptime size: usize, input: []const u8) !void {
+    var buf: [size]u8 = undefined;
     var stdout_writer = std.Io.File.stdout().writerStreaming(io, &buf);
     const writer = &stdout_writer.interface;
 
-    const converted_input = std.mem.span(input);
-
-    writer.writeAll(converted_input) catch return;
+    writer.writeAll(input) catch return;
     writer.writeAll("\n") catch return;
+
     writer.flush() catch return;
 }
 
-export fn handleMessage(msg: LaserScanFFISafe) callconv(.c) void {
+/// This allocates space for the handler and returns the pointer to it in u64
+export fn spawnHandler() callconv(.c) u64 {
+    const handler_ptr = allocator.create(LaserRadarHandler) catch unreachable;
+    handler_ptr.* = LaserRadarHandler.init() catch unreachable;
+
+    const handler_ptr_in_int = @intFromPtr(handler_ptr);
+    return handler_ptr_in_int;
+}
+
+export fn handleMessage(handler_ptr_in_int: u64, msg: LaserScanFFISafe) callconv(.c) void {
     _ = msg;
+
+    // I don't want to allocate anything here so I'll reserve a slice here on stack
+    const print_buf_size: comptime_int = 1028 * 4;
+    var buf: [print_buf_size]u8 = undefined;
+    const formatted_buf = std.fmt.bufPrint(&buf, "handler ptr in int: {d}", .{handler_ptr_in_int}) catch unreachable;
+    printToStdout(print_buf_size, formatted_buf) catch unreachable;
 }

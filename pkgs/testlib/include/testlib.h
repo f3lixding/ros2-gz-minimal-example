@@ -1,6 +1,7 @@
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
 
+#include <cstdint>
 #include <stddef.h>
 
 #ifdef __cplusplus
@@ -19,7 +20,9 @@ typedef struct LaserScanFFISafe {
   size_t ranges_len;
 } LaserScanFFISafe;
 
-void printToStdout(const char *input);
+void handleMessage(uint64_t handler_ptr, LaserScanFFISafe msg);
+
+uint64_t spawnHandler();
 
 #ifdef __cplusplus
 }

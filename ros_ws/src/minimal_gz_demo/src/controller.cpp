@@ -39,6 +39,8 @@ public:
 
     timer_ = this->create_wall_timer(100ms, [this]() { this->tick(); });
 
+    laser_handler_ptr_ = spawnHandler();
+
     RCLCPP_INFO(get_logger(), "Publishing Twist to /model/minibot/cmd_vel and "
                               "listening on /model/minibot/odometry");
   }
@@ -50,15 +52,12 @@ private:
   }
 
   void handle_laser(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
-    printToStdout("received laser msg");
-    // RCLCPP_INFO(get_logger(),
-    //             "scan frame=%s ranges=%zu angle_min=%.2f angle_max=%.2f "
-    //             "inc=%.4f range_min=%.2f range_max=%.2f",
-    //             msg->header.frame_id.c_str(), msg->ranges.size(),
-    //             msg->angle_min, msg->angle_max, msg->angle_increment,
-    //             msg->range_min, msg->range_max);
-    int center = msg->ranges.size() / 2;
-    RCLCPP_INFO(get_logger(), "front range = %.2f", msg->ranges[center]);
+    LaserScanFFISafe converted{
+        msg->angle_min,      msg->angle_max,     msg->angle_increment,
+        msg->time_increment, msg->scan_time,     msg->range_min,
+        msg->range_max,      msg->ranges.data(), msg->ranges.size(),
+    };
+    handleMessage(laser_handler_ptr_, converted);
   }
 
   void tick() {
@@ -104,6 +103,8 @@ private:
   rclcpp::Time last_log_time_;
   nav_msgs::msg::Odometry last_odom_;
   bool have_odom_{false};
+
+  uint64_t laser_handler_ptr_;
 };
 
 int main(int argc, char **argv) {
