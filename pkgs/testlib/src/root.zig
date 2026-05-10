@@ -50,14 +50,26 @@ pub const DriveCommand = extern struct {
 pub const LaserRadarHandler = struct {
     const Self = @This();
     const Allocator = std.mem.Allocator;
+    const Mode = enum {
+        DriveForward,
+        SlowDown,
+        TurnLeft,
+        TurnRight,
+        Stop,
+    };
 
     allocator: Allocator,
     start_idx: usize = 0,
     end_idx: usize = 0,
     past_actions: []DriveCommand = undefined,
 
+    state: Mode = .Stop,
+
     pub fn init(max_size: usize) !Self {
         const buf = try allocator.alloc(DriveCommand, max_size);
+        errdefer allocator.free(buf);
+
+        @memset(buf, .{ .linear_x = 0, .angular_z = 0 });
 
         return .{
             .allocator = allocator,
@@ -70,34 +82,45 @@ pub const LaserRadarHandler = struct {
     }
 
     pub fn handleMessage(self: *Self, msg: LaserScanFFISafe) !DriveCommand {
+        _ = msg;
+        const last_idx = blk: {
+            if (self.end_idx > 0) {
+                break :blk self.end_idx - 1;
+            } else {
+                const wrapped = self.past_actions.len - 1;
+                break :blk wrapped;
+            }
+        };
+        const previous_action = &self.past_actions[last_idx];
+        const previous_x = previous_action.linear_x;
+        const next_x = previous_x + 1;
+        const conclusion: DriveCommand = .{
+            .linear_x = next_x,
+            .angular_z = 0.0,
+        };
         // --- delete later start ---
         const print_buf_size: comptime_int = 1028 * 4;
         var buf: [print_buf_size]u8 = undefined;
 
-        const formatted_buf = try std.fmt.bufPrint(&buf, "Message received: {any}", .{msg});
+        const formatted_buf = try std.fmt.bufPrint(&buf, "next conclusion: {any}", .{conclusion});
         try printToStdout(print_buf_size, formatted_buf);
         // --- delete later end ---
-
-        const conclusion: DriveCommand = .{
-            .linear_x = 0.0,
-            .angular_z = 0.0,
-        };
         self.appendNextCommand(conclusion);
 
         return conclusion;
     }
 
     fn appendNextCommand(self: *Self, command: DriveCommand) void {
+        self.past_actions[self.end_idx] = command;
+
         const buf_size = self.past_actions.len;
-        const next_idx = self.end_idx % buf_size;
+        const next_idx = (self.end_idx + 1) % buf_size;
 
         self.end_idx = next_idx;
 
         if (self.end_idx == self.start_idx) {
             self.start_idx = (self.start_idx + 1) % buf_size;
         }
-
-        self.past_actions[self.end_idx] = command;
     }
 };
 
