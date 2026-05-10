@@ -3,6 +3,8 @@ const std = @import("std");
 const io = std.Io.Threaded.global_single_threaded.io();
 const allocator = std.heap.c_allocator;
 
+const MAX_PAST_ACTION_SIZE: usize = 10;
+
 pub const LaserScanFFISafe = extern struct {
     /// Start angle of the scan, in radians.
     /// This is the angle of the first entry in `ranges`.
@@ -37,20 +39,65 @@ pub const LaserScanFFISafe = extern struct {
     ranges_len: usize,
 };
 
+pub const DriveCommand = extern struct {
+    linear_x: f32,
+    angular_z: f32,
+};
+
+/// This has the following responsibilities via receiving laser readings:
+/// - Keeps track of past actions
+/// - Finally, produces DriveCommand
 pub const LaserRadarHandler = struct {
     const Self = @This();
     const Allocator = std.mem.Allocator;
 
     allocator: Allocator,
+    start_idx: usize = 0,
+    end_idx: usize = 0,
+    past_actions: []DriveCommand = undefined,
 
-    pub fn init() !Self {
+    pub fn init(max_size: usize) !Self {
+        const buf = try allocator.alloc(DriveCommand, max_size);
+
         return .{
             .allocator = allocator,
+            .past_actions = buf,
         };
     }
 
     pub fn deinit(self: Self) void {
-        _ = self;
+        self.past_actions.deinit(self.allocator);
+    }
+
+    pub fn handleMessage(self: *Self, msg: LaserScanFFISafe) !DriveCommand {
+        // --- delete later start ---
+        const print_buf_size: comptime_int = 1028 * 4;
+        var buf: [print_buf_size]u8 = undefined;
+
+        const formatted_buf = try std.fmt.bufPrint(&buf, "Message received: {any}", .{msg});
+        try printToStdout(print_buf_size, formatted_buf);
+        // --- delete later end ---
+
+        const conclusion: DriveCommand = .{
+            .linear_x = 0.0,
+            .angular_z = 0.0,
+        };
+        self.appendNextCommand(conclusion);
+
+        return conclusion;
+    }
+
+    fn appendNextCommand(self: *Self, command: DriveCommand) void {
+        const buf_size = self.past_actions.len;
+        const next_idx = self.end_idx % buf_size;
+
+        self.end_idx = next_idx;
+
+        if (self.end_idx == self.start_idx) {
+            self.start_idx = (self.start_idx + 1) % buf_size;
+        }
+
+        self.past_actions[self.end_idx] = command;
     }
 };
 
@@ -59,27 +106,22 @@ fn printToStdout(comptime size: usize, input: []const u8) !void {
     var stdout_writer = std.Io.File.stdout().writerStreaming(io, &buf);
     const writer = &stdout_writer.interface;
 
-    writer.writeAll(input) catch return;
-    writer.writeAll("\n") catch return;
+    try writer.writeAll(input);
+    try writer.writeAll("\n");
 
-    writer.flush() catch return;
+    try writer.flush();
 }
 
 /// This allocates space for the handler and returns the pointer to it in u64
 export fn spawnHandler() callconv(.c) u64 {
     const handler_ptr = allocator.create(LaserRadarHandler) catch unreachable;
-    handler_ptr.* = LaserRadarHandler.init() catch unreachable;
+    handler_ptr.* = LaserRadarHandler.init(MAX_PAST_ACTION_SIZE) catch unreachable;
 
     const handler_ptr_in_int = @intFromPtr(handler_ptr);
     return handler_ptr_in_int;
 }
 
 export fn handleMessage(handler_ptr_in_int: u64, msg: LaserScanFFISafe) callconv(.c) void {
-    _ = msg;
-
-    // I don't want to allocate anything here so I'll reserve a slice here on stack
-    const print_buf_size: comptime_int = 1028 * 4;
-    var buf: [print_buf_size]u8 = undefined;
-    const formatted_buf = std.fmt.bufPrint(&buf, "handler ptr in int: {d}", .{handler_ptr_in_int}) catch unreachable;
-    printToStdout(print_buf_size, formatted_buf) catch unreachable;
+    const handler_ptr = @as(*LaserRadarHandler, @ptrFromInt(handler_ptr_in_int));
+    _ = handler_ptr.handleMessage(msg) catch unreachable;
 }
